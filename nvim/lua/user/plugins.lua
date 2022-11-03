@@ -13,18 +13,38 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-    -- Plugins
+    -- Packer use keep at top
     use "wbthomason/packer.nvim"
 
---    use "glepnir/lspsaga.nvim"
+    -- Other
+    use "nvim-lua/popup.nvim"
+    use "nvim-lua/plenary.nvim"
 
-    --e "neovim/nvim-lspconfig"
-    -- use "williamboman/nvim-lsp-installer"
-
+    -- Treesitter
     use { 
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
+
+    -- Cmp Completion and LSP icons
+    use "hrsh7th/nvim-cmp" 
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "saadparwaiz1/cmp_luasnip"
+    use "hrsh7th/cmp-nvim-lsp"
+
+    -- Snippets
+    use "L3MON4D3/LuaSnip"
+    use "rafamadriz/friendly-snippets"
+
+    -- Telescope
+    use "nvim-telescope/telescope.nvim"
+    use "nvim-telescope/telescope-media-files.nvim"
+
+    -- LSP
+    use "neovim/nvim-lspconfig"
+    use "williamboman/nvim-lspconfig"
 
     -- Colors
     use "folke/tokyonight.nvim"
