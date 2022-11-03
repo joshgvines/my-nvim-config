@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
     -- Other
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
+    use "nvim-tree/nvim-web-devicons"
 
     -- Treesitter
     use { 
