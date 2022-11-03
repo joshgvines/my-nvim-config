@@ -42,9 +42,12 @@ return require('packer').startup(function(use)
     use "nvim-telescope/telescope.nvim"
     use "nvim-telescope/telescope-media-files.nvim"
 
+
     -- LSP
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
     use "neovim/nvim-lspconfig"
-    use "williamboman/nvim-lspconfig"
+    --use "williamboman/nvim-lsp-installer"
 
     -- Colors
     use "folke/tokyonight.nvim"
