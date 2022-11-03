@@ -1,4 +1,9 @@
+
+
 # Compiled class file
+nvim/plugin/*
+nvim/plugin
+
 *.class
 
 # Log file
