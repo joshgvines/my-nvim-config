@@ -6,4 +6,5 @@ end
 require("mason").setup()
 require("mason-lspconfig").setup()
 
-require "user.lsp.lsp-handlers"
+-- TODO: Add require check for servers
+--require "user.lsp.lsp-handlers"
